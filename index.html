@@ -29,7 +29,7 @@
             ><span class="ingredient">Web</span>Studio</a
           >
           <ul class="site-nav">
-            <li class="item">
+            <li class="item studio-line">
               <a href="./index.html" class="link current">Студія</a>
             </li>
             <li class="item">
@@ -59,8 +59,17 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button">Замовити послугу</button>
+          <button type="button" class="button" data-modal-open>Замовити послугу
+          </div>
+                <!--Modal window-->
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button type="button" class="modal-button" data-modal-close>
+                <img src="./images/close.svg" alt="Хрестик">
+              </button>
+          </div>
         </div>
+
       </section>
       <!--Features-->
       <section class="section feature">
@@ -122,29 +131,45 @@
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="section-title-list">
-            <li>
-              <img
+            <li class="">
+              <div class="work-item">
+                <img
                 class="img"
                 src="./images/img.jpg"
                 alt="Програміст пише код на Apple iMac"
                 width="370"
               />
+              <div class="overlay">
+                <p class="overlay-desc">десктопні додатки</p>
+              </div>
+            </div>
             </li>
             <li>
-              <img
+              <div class="work-item">
+                 <img
                 class="img"
                 src="./images/img(1).jpg"
                 alt="Дизайнер обирає оформлення сторінки сайту"
                 width="370"
               />
+              <div class="overlay">
+                <p class="overlay-desc">мобільні додатки</p>
+              </div>
+            </div>
+
             </li>
             <li>
-              <img
+              <div class="work-item">
+                <img
                 class="img"
                 src="./images/img(2).jpg"
                 alt="Планшет з палітрою кольорів"
                 width="370"
               />
+              <div class="overlay">
+                <p class="overlay-desc">дизайнерські рішення</p>
+              </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -537,5 +562,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/model.js"></script>
   </body>
 </html>
