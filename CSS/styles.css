@@ -127,15 +127,15 @@ button {
 }
 
 .studio-line::after {
-content: "";
-left: 0;
-bottom: 0;
-position: absolute;
-display: block;
-width: 100%;
-height: 4px;
-background-color: var(--accent-text-color);
-border-radius: 2px;
+  content: "";
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-text-color);
+  border-radius: 2px;
 }
 
 /*Auth-nav*/
@@ -271,8 +271,8 @@ a {
 
 .button:hover,
 .button:focus {
- background-color: var(--button-active);
- transition: var(--animation-2);
+  background-color: var(--button-active);
+  transition: var(--animation-2);
 }
 
 /*Modal window*/
@@ -284,7 +284,6 @@ a {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-
 }
 
 .backdrop.is-hidden {
@@ -297,12 +296,13 @@ a {
   width: 528px;
   height: 521px;
   background-color: var(--accent-background-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 4px;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .modal-button {
@@ -370,19 +370,17 @@ transform: translate(-50%, -50%);
 
 .work-item {
   position: relative;
-
 }
 
 .overlay {
-position: absolute;
-right: 0;
-bottom: 0;
-width: 100%;
-height: 70px;
-background-color: rgba(47, 48, 58, 0.8);
-text-align: center;
-padding-top: 27px;
-
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  text-align: center;
+  padding-top: 27px;
 }
 
 .overlay-desc {
@@ -637,23 +635,21 @@ footer {
 /*Line*/
 .portfolio-line {
   position: relative;
-
 }
 
 .portfolio-line::after {
-content: "";
-left: 0;
-bottom: 0;
-position: absolute;
-display: block;
-width: 100%;
-height: 4px;
-background-color: var(--accent-text-color);
-border-radius: 2px;
+  content: "";
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-text-color);
+  border-radius: 2px;
 }
 
 /* Buttons */
-
 
 .section-portfolio .button {
   display: block;
@@ -679,15 +675,14 @@ border-radius: 2px;
   overflow: hidden;
 }
 
-
-.portfolio-content{
-position: absolute;
-top: 0;
-left: 0;
-transform: translateY(100%);
-width: 100%;
-height: 100%;
-background-color: rgba(33, 150, 243, 0.9);
+.portfolio-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
 }
 
 .list-item-images:hover .portfolio-content {
@@ -696,12 +691,12 @@ background-color: rgba(33, 150, 243, 0.9);
 }
 
 .portfolio-text {
-font-weight: 400;
-font-size: 18px;
-line-height: 28px;
-letter-spacing: 0.03em;
-padding: 64px 24px;
-color: var(--white-text-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  padding: 64px 24px;
+  color: var(--white-text-color);
 }
 
 .first-button {
