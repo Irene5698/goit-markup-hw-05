@@ -316,8 +316,8 @@ button:focus {
   background-color: var(--accent-background-color);
 }
 
-.button-color:hover ,
-.button-color:focus {
+.modal-button:hover ,
+.modal-button:focus {
   background-color: var(--accent-background-color);
 }
 
