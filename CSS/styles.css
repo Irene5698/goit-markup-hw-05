@@ -252,7 +252,6 @@ a {
 /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);*/
 .button {
   margin: 0 auto;
-  display: inline-block;
   padding: 10px 32px;
   min-width: 216px;
   min-height: 50px;
@@ -294,8 +293,8 @@ a {
 }
 
 .modal {
-  width: 528px;
-  height: 521px;
+  min-width: 528px;
+  min-height: 521px;
   background-color: var(--accent-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -304,6 +303,7 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 40px;
 }
 
 .modal-button {
@@ -314,12 +314,143 @@ a {
   width: 30px;
   height: 30px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 6px 6px;
   background-color: var(--accent-background-color);
+}
+
+.modal-button-close {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-button-close:hover,
+.modal-button-close:focus {
+  fill: var(--accent-text-color);
+}
+
+/*Register form*/
+
+.register-form {
+  text-align: left;
+}
+
+.register-form-input:invalid {
+  outline-color: var(--accent-text-color);
+}
+
+.register-form-message {
+  outline-color: var(--accent-text-color);
+}
+
+.register-form-title {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  margin-bottom: 12px;
+}
+
+.register-form-group {
+  margin-bottom: 10px;
+}
+
+.register-form-field {
+  display: block;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.register-form-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  display: block;
+  color: #757575;
+}
+
+.register-form-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  padding-right: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.register-form-input:focus {
+  border-color: #2196f3;
+}
+
+.register-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  margin-bottom: 11px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.register-form-input:focus + .register-form-icon {
+  fill: var(--button-active);
+}
+
+.register-form-message {
+  width: 100%;
+  padding: 16px;
+  font-size: 12px;
+  display: block;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.register-form-message {
+  font-size: 12px;
+}
+
+.register-form-agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.register-form-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.register-form-checkbox {
+  -webkit-appearence: none;
+  -moz-appearence: none;
+  appearance: none;
+}
+.register-form-checkbox:checked + .icon-checkbox {
+  background-color: var(--accent-text-color);
+  background-image: url(../images/icon\ check-1.svg);
+  background-size: contain;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-repeat: no-repeat;
+  border: 2px solid var(--accent-text-color);
+}
+.icon-checkbox {
+  display: flex;
+  align-items: center;
+  width: 16px;
+  height: 15px;
+  border: 2px solid rgba(33, 33, 33, 1);
+  border-radius: 2px;
+  margin-right: 7px;
+}
+
+.register-form-link {
+  color: var(--accent-text-color);
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
 }
 
 /* Main */
@@ -608,6 +739,7 @@ footer {
 }
 .footer-socials {
   margin-left: 70px;
+  margin-right: 93px;
 }
 
 .footer-socials-icon {
@@ -631,6 +763,35 @@ footer {
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*Footer form*/
+
+.footer-form-button {
+  display: flex;
+  margin-top: 20px;
+  gap: 12px;
+}
+
+.footer-button-submit {
+  display: flex;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  gap: 10px;
+}
+
+.footer-form-icon {
+  fill: var(--white-text-color);
+}
+
+.footer-form-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--dark-background-color);
+  padding-left: 16px;
+  box-sizing: border-box;
 }
 
 /* Оформлення стилів для Portfolio*/
