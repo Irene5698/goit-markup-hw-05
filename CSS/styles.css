@@ -290,8 +290,8 @@ button:focus {
 }
 
 .modal {
-  min-width: 528px;
-  min-height: 521px;
+  width: 528px;
+  height: 581px;
   background-color: var(--accent-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -339,6 +339,7 @@ button:focus {
 
 .register-form-input:invalid {
   outline-color: var(--accent-text-color);
+  transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .register-form-message {
@@ -357,23 +358,31 @@ button:focus {
 }
 
 .register-form-group {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .register-form-field {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  position: relative;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.register-form-textarea {
+  display: block;
   position: relative;
 }
 
 .register-form-label {
-  font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: calc(14 / 12);
+  margin-bottom: 4px;
   letter-spacing: 0.01em;
   display: block;
   color: #757575;
 }
+
+
 
 .register-form-input {
   width: 100%;
@@ -382,18 +391,16 @@ button:focus {
   padding-right: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .register-form-input:focus {
-  border-color: #2196f3;
+  border-color: #2196f3; 
 }
 
 .register-form-icon {
   position: absolute;
   top: 50%;
   left: 10px;
-  margin-bottom: 11px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -404,6 +411,7 @@ button:focus {
 .register-form-message {
   width: 100%;
   padding: 16px;
+  height: 120px;
   font-size: 12px;
   display: block;
   resize: none;
@@ -448,6 +456,10 @@ button:focus {
   border: 2px solid rgba(33, 33, 33, 1);
   border-radius: 2px;
   margin-right: 7px;
+}
+
+.register-form-desc {
+  color: var(--grey-text-color);
 }
 
 .register-form-link {
@@ -742,7 +754,6 @@ footer {
 }
 .footer-socials {
   margin-left: 70px;
-  margin-right: 93px;
 }
 
 .footer-socials-icon {
@@ -780,11 +791,18 @@ footer {
   display: flex;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   gap: 10px;
+  justify-content: center;
 }
 
 .footer-form-icon {
   fill: var(--white-text-color);
 }
+
+.footer-container-form {
+  margin-left: 70px;
+  margin-right: auto;
+}
+
 
 .footer-form-input {
   width: 358px;
@@ -795,6 +813,7 @@ footer {
   background-color: var(--dark-background-color);
   padding-left: 16px;
   box-sizing: border-box;
+  color: var(--accent-background-color);
 }
 
 /* Оформлення стилів для Portfolio*/
