@@ -337,9 +337,6 @@ button:focus {
   text-align: left;
 }
 
-.register-form-input:invalid {
-  outline-color: var(--accent-text-color);
-}
 
 .register-form-message {
   outline-color: var(--accent-text-color);
@@ -364,7 +361,6 @@ button:focus {
   display: block;
   margin-bottom: 10px;
   position: relative;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .register-form-textarea {
@@ -386,8 +382,10 @@ button:focus {
   height: 40px;
   padding-left: 42px;
   padding-right: 42px;
+  outline: transparent;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .register-form-input:focus {
